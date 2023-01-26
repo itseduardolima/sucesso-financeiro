@@ -13,7 +13,13 @@ body {
 
 
 header {
-    background-color: var(--color-brand);
+    background-color: var(--color-base);
+    border-bottom: #2244597a 1px solid;
+}
+
+.navbar-brand {
+    color: #224459;
+    text-decoration: none;
 }
 
 
@@ -51,6 +57,11 @@ img {
     .resp2 {
         width: 50vw;
         margin-top: 10px;  
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: end;
     }
 
 
