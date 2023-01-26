@@ -28,7 +28,6 @@ h2, h3, h4, h5 {
 }
 
 a {
-    text-decoration: none;
     color: var(--color-brand);
     transition: all 0.4s ease;
 }
@@ -90,8 +89,9 @@ img {
 
   
 .link-custom {
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
+    text-decoration: none;
 }
 
 .link-custom::after {
@@ -108,3 +108,12 @@ img {
 .link-custom:hover::after {
     width: 100%;
 }  
+/* SOCIAL ICONS */
+
+.social-icons {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
