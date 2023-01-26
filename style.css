@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-base: #F0F1F2;
+    --color-base2: #659dbf;
+    --color-brand:#224459;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base);
+    font-family: var(--font-base) sans-serif;
+}
+
+
+header {
+    background-color: var(--color-base2);
+}
+
+
+h2, h3, h4, h5 {
+    color: var(--color-brand);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+    transition: all 0.4s ease;
+}
+
+.flex {
+    display: flex;
+    
+}
+
+
+img {
+    height: 250px;
+    width:250px;
+    border-radius: 5px;
+    margin-top: 13px;
+    
+}
+
+
+@media (min-width: 992px) {
+    .resp {
+        width: 40vw;
+        margin-top: 30px;  
+    }
+
+    .resp2 {
+        width: 50vw;
+        margin-top: 10px;  
+    }
+
+
+}
+
+
+/* Ocultando elementos em telas menores */
+@media (max-width: 600px) {
+    img {
+        display: none;
+    }
+  }
+  
+  /* Alinhando elementos horizontalmente em telas menores */
+  @media (max-width: 600px) {
+    section {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .col-sm-4{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}  
